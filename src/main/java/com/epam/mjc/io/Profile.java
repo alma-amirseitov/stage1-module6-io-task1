@@ -2,7 +2,7 @@ package com.epam.mjc.io;
 
 import java.util.Objects;
 
-public class Profile {
+public class  Profile {
 
     private String name;
     private Integer age;

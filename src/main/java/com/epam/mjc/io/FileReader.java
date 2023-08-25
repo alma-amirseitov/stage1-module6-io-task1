@@ -10,7 +10,7 @@ import java.util.Map;
 
 public class FileReader {
 
-    public Profile getDataFromFile(File file) {
+    public Profile getDataFromFile(File file){
         Profile profile = new Profile();
         StringBuilder fileData = new StringBuilder();
         try(FileInputStream fileInputStream = new FileInputStream(file)){
@@ -18,8 +18,6 @@ public class FileReader {
             while((ch=fileInputStream.read()) != -1) {
                 fileData.append((char) ch);
             }
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

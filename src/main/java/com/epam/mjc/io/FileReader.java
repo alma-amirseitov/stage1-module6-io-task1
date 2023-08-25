@@ -2,7 +2,6 @@ package com.epam.mjc.io;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
@@ -19,7 +18,6 @@ public class FileReader {
                 fileData.append((char) ch);
             }
         } catch (IOException e) {
-            System.err.print(e);
             //throw new RuntimeException(e);
         }
 

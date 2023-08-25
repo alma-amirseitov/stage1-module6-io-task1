@@ -18,7 +18,6 @@ public class FileReader {
                 fileData.append((char) ch);
             }
         } catch (IOException e) {
-            //throw new RuntimeException(e);
         }
 
         String[] keyValuePairs = fileData.toString().split("\n");
